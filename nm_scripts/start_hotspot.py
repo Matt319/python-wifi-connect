@@ -28,7 +28,7 @@ connection_ID = 'PFC_EDU'
 hotspot = {
  '802-11-wireless': {'band': 'bg',
                      'mode': 'ap',
-                     'ssid': 'PFC_EDU-'+os.getenv('RESIN_DEVICE_NAME_AT_INIT')},
+                     'ssid': os.getenv('RESIN_DEVICE_NAME_AT_INIT')},
  'connection': {'autoconnect': False,
                 'id': connection_ID,
                 'interface-name': 'wlan0',
